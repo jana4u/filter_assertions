@@ -16,10 +16,8 @@ Gem::Specification.new do |s|
   s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_path = 'lib'
 
-  s.add_dependency 'bundler', '~> 1.0.0'
   s.add_dependency 'rails', '>= 3.0.0'
 
-  s.add_development_dependency 'turn'
   s.add_development_dependency 'shoulda'
-  s.add_development_dependency 'sqlite3-ruby'
+  s.add_development_dependency 'sqlite3'
 end
